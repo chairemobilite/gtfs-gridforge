@@ -1,0 +1,24 @@
+[package]
+name = "gtfs-gridforge"
+version = "0.1.0"
+edition = "2021"
+description = "A tool to generate GTFS files from a simplified letter-based grid"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yourusername/gtfs-gridforge"
+keywords = ["gtfs", "transportation", "grid", "transit"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+gtfs-structures = "0.39"
+chrono = "0.4"
+
+
+[lib]
+name = "gtfs_gridforge"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gtfs-gridforge"
+path = "src/main.rs"
